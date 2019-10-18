@@ -1,0 +1,8 @@
+ros-melodic-rosbag-fancy (0.1.0-1bionic) bionic; urgency=high
+
+  * Initial release
+  * Contributors: Jan Quenzel, Max Schwarz
+
+ -- Max Schwarz <max.schwarz@uni-bonn.de>  Thu, 17 Oct 2019 22:00:00 -0000
+
+
