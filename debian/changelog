@@ -1,0 +1,16 @@
+ros-melodic-rosbag-fancy (0.1.1-1bionic) bionic; urgency=high
+
+  * Compatibility with ROS Kinetic (PR: #7)
+    also helps with Debian Stretch
+  * Contributors: Davide Faconti, Max Schwarz
+
+ -- Max Schwarz <max.schwarz@uni-bonn.de>  Mon, 21 Oct 2019 22:00:00 -0000
+
+ros-melodic-rosbag-fancy (0.1.0-1bionic) bionic; urgency=high
+
+  * Initial release
+  * Contributors: Jan Quenzel, Max Schwarz
+
+ -- Max Schwarz <max.schwarz@uni-bonn.de>  Thu, 17 Oct 2019 22:00:00 -0000
+
+
