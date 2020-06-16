@@ -30,14 +30,6 @@ namespace
 		term.setEcho(true);
 	}
 
-	template<class... Args>
-	void printLine(unsigned int& lineCounter, const Args& ... args)
-	{
-		lineCounter++;
-		fmt::print(args...);
-		putchar('\n');
-	}
-
 	std::string memoryToString(uint64_t memory)
 	{
 		if(memory < static_cast<uint64_t>(1<<10))
@@ -180,13 +172,21 @@ UI::UI(TopicManager& config, MessageQueue& queue, BagWriter& writer, Mode mode)
 	m_timer = nh.createSteadyTimer(ros::WallDuration(0.1), boost::bind(&UI::draw, this));
 }
 
+template<class... Args>
+void UI::printLine(unsigned int& lineCounter, const Args& ... args)
+{
+	lineCounter++;
+	m_term.clearToEndOfLine();
+	fmt::print(args...);
+	putchar('\n');
+}
+
 void UI::draw()
 {
 	unsigned int cnt = 0;
 
 	ros::WallTime now = ros::WallTime::now();
 
-	printLine(cnt, "Recording...");
 	printLine(cnt, "");
 
 	uint64_t totalMessages = 0;
@@ -266,6 +266,18 @@ void UI::draw()
 	cnt++;
 
 	printLine(cnt, "");
+	if(m_bagWriter.running())
+	{
+		m_term.setForegroundColor(0x00FF00);
+		printLine(cnt, "Recording...");
+		m_term.setStandardColors();
+	}
+	else
+	{
+		m_term.setForegroundColor(0x0000FF);
+		printLine(cnt, "Paused.");
+		m_term.setStandardColors();
+	}
 	printLine(cnt, "Message queue: {:10} messages, {:>10}", m_queue.messagesInQueue(), memoryToString(m_queue.bytesInQueue()));
 	printLine(cnt, "Bag size: {:>10}, available space: {:>10}",
 		memoryToString(m_bagWriter.sizeInBytes()),
