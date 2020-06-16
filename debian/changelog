@@ -1,0 +1,32 @@
+ros-melodic-rosbag-fancy (0.2.0-1stretch) stretch; urgency=high
+
+  * bag_writer: fix uninitialized read in run() during shutdown
+    This happens in certain cases during shutdown, where msg is not set.
+  * bag_writer: make sure we don't overwrite bag files with same stamp
+  * ui: move paused/recording indicator to bottom
+  * bag_writer: special handling for tf2 static transforms on bag reopen
+  * add --paused flag to start in paused mode
+  * UI improvements for start/stop
+  * start/stop service calls
+  * add tf2_republisher tool (helpful for playback)
+  * topic_manager: compile fix for clang
+  * Contributors: Max Schwarz
+
+ -- Max Schwarz <max.schwarz@uni-bonn.de>  Mon, 15 Jun 2020 22:00:00 -0000
+
+ros-melodic-rosbag-fancy (0.1.1-1stretch) stretch; urgency=high
+
+  * Compatibility with ROS Kinetic (PR: #7)
+    also helps with Debian Stretch
+  * Contributors: Davide Faconti, Max Schwarz
+
+ -- Max Schwarz <max.schwarz@uni-bonn.de>  Mon, 21 Oct 2019 22:00:00 -0000
+
+ros-melodic-rosbag-fancy (0.1.0-1stretch) stretch; urgency=high
+
+  * Initial release
+  * Contributors: Jan Quenzel, Max Schwarz
+
+ -- Max Schwarz <max.schwarz@uni-bonn.de>  Thu, 17 Oct 2019 22:00:00 -0000
+
+
