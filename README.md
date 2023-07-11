@@ -1,3 +1,29 @@
+## rosbag_fancy (noetic) - 1.0.1-1
+
+The packages in the `rosbag_fancy` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --ros-distro noetic rosbag_fancy` on `Tue, 11 Jul 2023 07:13:00 -0000`
+
+These packages were released:
+- `rosbag_fancy`
+- `rosbag_fancy_msgs`
+- `rqt_rosbag_fancy`
+
+Version of package(s) in repository `rosbag_fancy`:
+
+- upstream repository: https://github.com/xqms/rosbag_fancy
+- release repository: https://github.com/xqms/rosbag_fancy-release.git
+- rosdistro version: `1.0.0-1`
+- old version: `1.0.0-1`
+- new version: `1.0.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.1`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## rosbag_fancy (noetic) - 1.0.0-1
 
 The packages in the `rosbag_fancy` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --ros-distro noetic rosbag_fancy` on `Mon, 10 Jul 2023 12:44:26 -0000`
