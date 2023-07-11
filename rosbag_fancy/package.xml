@@ -1,0 +1,19 @@
+<package format="2">
+	<name>rosbag_fancy</name>
+	<description>rosbag with terminal UI</description>
+	<version>1.0.0</version>
+	<license>BSD</license>
+	<maintainer email="max.schwarz@uni-bonn.de">Max Schwarz</maintainer>
+
+	<buildtool_depend>catkin</buildtool_depend>
+	<depend>boost</depend>
+	<depend>bzip2</depend>
+	<depend>libncurses-dev</depend>
+	<depend>rosbag_fancy_msgs</depend>
+	<depend>rosbag_storage</depend>
+	<depend>roscpp</depend>
+	<depend>roslz4</depend>
+	<depend>rosfmt</depend>
+	<depend>tf2_ros</depend>
+	<depend>topic_tools</depend>
+</package>
