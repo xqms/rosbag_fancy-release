@@ -1,0 +1,32 @@
+ros-noetic-rosbag-fancy-msgs (1.0.1-1focal) focal; urgency=high
+
+
+
+ -- Max Schwarz <max.schwarz@ais.uni-bonn.de>  Mon, 10 Jul 2023 22:00:00 -0000
+
+ros-noetic-rosbag-fancy-msgs (1.0.0-1focal) focal; urgency=high
+
+  * split into separate packages (main, _msgs, and _gui)
+  * Contributors: Max Schwarz
+
+ -- Max Schwarz <max.schwarz@ais.uni-bonn.de>  Sun, 09 Jul 2023 22:00:00 -0000
+
+ros-noetic-rosbag-fancy-msgs (0.2.0-1focal) focal; urgency=high
+
+
+
+ -- Max Schwarz <max.schwarz@ais.uni-bonn.de>  Mon, 15 Jun 2020 22:00:00 -0000
+
+ros-noetic-rosbag-fancy-msgs (0.1.1-1focal) focal; urgency=high
+
+
+
+ -- Max Schwarz <max.schwarz@ais.uni-bonn.de>  Mon, 21 Oct 2019 22:00:00 -0000
+
+ros-noetic-rosbag-fancy-msgs (0.1.0-1focal) focal; urgency=high
+
+
+
+ -- Max Schwarz <max.schwarz@ais.uni-bonn.de>  Thu, 17 Oct 2019 22:00:00 -0000
+
+
