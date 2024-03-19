@@ -2,6 +2,9 @@
 Changelog for package rqt_rosbag_fancy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.1.0 (2024-03-19)
+------------------
+
 1.0.1 (2023-07-11)
 ------------------
 * add missing std_srvs dependency
