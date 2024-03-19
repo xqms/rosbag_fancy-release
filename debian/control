@@ -1,0 +1,12 @@
+Source: ros-noetic-rqt-rosbag-fancy
+Section: misc
+Priority: optional
+Maintainer: Max Schwarz <max.schwarz@ais.uni-bonn.de>
+Build-Depends: debhelper (>= 9.0.0), qtbase5-dev, ros-noetic-catkin, ros-noetic-rosbag-fancy-msgs, ros-noetic-rosfmt, ros-noetic-rqt-gui, ros-noetic-rqt-gui-cpp, ros-noetic-std-srvs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-rqt-rosbag-fancy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-rosbag-fancy-msgs, ros-noetic-rosfmt, ros-noetic-rqt-gui, ros-noetic-rqt-gui-cpp, ros-noetic-std-srvs
+Description: rqt GUI for rosbag_fancy
